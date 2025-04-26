@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+#home-container {
+    padding: 50px;
+    background: url('../assets/city-bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+p {
+    font-size: 24px;
+    max-width: 600px;
+    margin: 20px auto;
+    animation: fadeIn 1s ease-in;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #ff9900, #e68a00);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #e68a00, #ff9900);
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer a {
+    color: #ff9900;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+#game-container {
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+    background: #000;
+    position: relative;
+}
+
+#quiz-container {
+    padding: 50px;
+    background: url('../assets/city-bg.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quiz-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#quiz-container p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#quiz-container button {
+    margin: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 800px) {
+    #game-container {
+        width: 100%;
+        height: calc(100vh - 40px);
+        max-height: 600px;
+    }
+    
+    h1 { 
+        font-size: 28px;
+        padding: 0 10px;
+    }
+    
+    p { 
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    
+    button {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    
+    #quiz-container {
+        padding: 20px;
+    }
+    
+    #quiz-container h2 {
+        font-size: 24px;
+    }
+    
+    #quiz-container p {
+        font-size: 18px;
+    }
+} 

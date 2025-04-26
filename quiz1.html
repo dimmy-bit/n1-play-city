@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 - N1 Play City</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h2>Quiz Time!</h2>
+        <p>How does N1Chain perform?</p>
+        <button onclick="showResult(true)">A) Blazing Fast</button>
+        <button onclick="showResult(false)">B) Pretty Slow</button>
+        <p id="result"></p>
+        <button id="next" style="display:none" onclick="window.location.href='level2.html'">Next Level</button>
+    </div>
+    <script>
+        function showResult(isCorrect) {
+            const result = document.getElementById('result');
+            const next = document.getElementById('next');
+            result.textContent = isCorrect ? 'Correct! N1 is super smooth!' : 'Oops! N1 is blazing fast!';
+            result.style.color = isCorrect ? '#0f0' : '#f00';
+            next.style.display = 'block';
+        }
+    </script>
+</body>
+</html> 

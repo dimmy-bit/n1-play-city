@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 2 - N1 Play City</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <h2>Quiz Time!</h2>
+        <p>What can devs use on N1Chain?</p>
+        <button onclick="showResult(true)">A) TypeScript, Solidity, Rust</button>
+        <button onclick="showResult(false)">B) Python, Java</button>
+        <p id="result"></p>
+        <button id="next" style="display:none" onclick="window.location.href='level3.html'">Next Level</button>
+    </div>
+    <script>
+        function showResult(isCorrect) {
+            const result = document.getElementById('result');
+            const next = document.getElementById('next');
+            result.textContent = isCorrect ? 'Correct! N1 supports TypeScript, Solidity, Rust!' : 'Oops! N1 supports TypeScript, Solidity, Rust!';
+            result.style.color = isCorrect ? '#0f0' : '#f00';
+            next.style.display = 'block';
+        }
+    </script>
+</body>
+</html> 
